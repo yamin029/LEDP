@@ -1,3 +1,10 @@
+$(window).on("load", function() {
+
+    $(".loader .inner").fadeOut(500, function() {
+        $(".loader").fadeOut(750);
+    });
+
+})
 $(document).ready(function() {
 	// Super Slide
 	$('#slides').superslides({
@@ -49,13 +56,4 @@ $(document).ready(function() {
 		delay : 10,
 		time  : 1000
 	});
-
-	var isActive = false;
-
-	if ($(window).scrollTop() > $(window).height() + 600) {
-		if (isActive === false) {
-			$('.chart').data('easyPieChart').update(100);
-			isActive = true;
-		}
-	}
 });
