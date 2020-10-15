@@ -1,0 +1,135 @@
+html, body{
+	scroll-behavior: smooth;
+}
+.overlay {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 3;
+	background: rgba(0, 0, 0, 0.5);
+}
+.slides-navigation a.next,
+.slides-navigation a.prev {
+	height: 47px;
+	width: 47px;
+	background-size: cover;
+}
+.slides-navigation {
+	z-index: 6;
+}
+.slides-navigation a.next {
+	right: 20px;
+	background-image: url(../img/icons/next.png);
+}
+.slides-navigation a.prev {
+	left: 20px;
+	background-image: url(../img/icons/prev.png);
+}
+.section {
+	padding: 100px 0;
+}
+.titleMessage {
+	position: absolute;
+	width: 100%;
+	height: 250px;
+	z-index: 5;
+	top: 40%;
+	text-align: center;
+}
+.titleMessage .heading p {
+	color: white;
+	letter-spacing: 15px;
+	font-weight: 100;
+}
+.titleMessage .heading p.main {
+	font-size: 70px;
+}
+.titleMessage .heading p.sub {
+	font-size: 25px;
+}
+.skillsSection, .loveSection{
+    background: #E74C3C;
+    color: white;
+}
+.skill{
+
+}
+.chart{
+	position: relative;
+	height: 152px;
+	width: 152px;
+	display: inline-block;
+}
+.chart canvas{
+	position: absolute;
+	left: 0;
+}
+.chart .percent{
+	font-size: 35px;
+	color: black;
+	line-height: 152px;
+}
+.chart .percent:after{
+	content: '%';
+}
+.squareItem{
+	position: relative;
+	border: 2px solid black;
+	padding: 50px 15px 35px;
+    text-align: center;
+    border-top: none;
+
+}
+/* .squareInnerContainer{
+	
+} */
+
+.squareItem::before,
+.squareItem::after{
+	content: '';
+	border-bottom: 2px solid black;
+	position: absolute;
+	width: 30%;
+	top: 0;
+}
+.squareItem::before{
+	right: 0;
+}
+.squareItem::after{
+	left: 0;
+}
+.squareIcon{
+	position: absolute;
+	left: 40%;
+	top: -30px;
+	font-size: 45px;
+}
+
+.squareContent h2{
+	color: #E74C3C;
+	font-size: 50px;
+}
+.btn{
+	border-radius: 0 !important;
+	font-size: 19px;
+	padding: 15px;
+	margin-top: 35px;
+}
+.loveSection h3{
+	font-size: 45px;
+}
+.loveSection p{
+	font-weight: 400;
+}
+.navigationSection{
+	background: #E74C3C;
+	color: white;
+}
+.navbar{
+	color: white;
+	padding: 20px;
+}
+.navbar-brand{
+	font-weight: 500;
+	letter-spacing: 2px;
+}
